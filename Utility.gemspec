@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Raseel Mohamed"]
   spec.email         = ["raseel.mohamed@nih.gov"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = %q{Gem file that does the major utility functions for NCI Match interacting with AWS}
+  spec.description   = %q{These are basic functions used daily by the QA team at Leidos. They deal with Dynamo, S3 and other AWS services. }
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
@@ -30,4 +30,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_dependency "aws-sdk", "~>3.0"
+  spec.add_dependency "aws-sdk-s3", "~>1.4.0"
 end
